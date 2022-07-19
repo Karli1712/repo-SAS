@@ -14,31 +14,41 @@
   </head>
   <body>
     <!------------inicia nav--------------->
-
-<nav class="botonera">
-  <a href="index.html">
-    <img src="img/logo_sugar.png" alt="logo de dulceria">
-    </a>
-    <ul>
-      <li>
-         <a href="views/nosotros.html">Nosotros</a>
-      </li>
-      <li>
-         <a href="views/snacks.html">Snacks</a>
-      </li>
-      <li>
-         <a href="views/bebidas.html">Bebidas</a>
-      </li>      
-      <li>
-         <a href="views/promociones.html">Promociones</a>
-      </li>
-     <li>
-         <a href="views/contacto.html">Contacto</a>
-      </li>
-
-    </ul>
-</nav>  
-
+<nav class="navbar navbar-expand-lg navbar-light bg-nav">
+  <div class="container-fluid">
+      <a href="index.html">
+      <img src="img/logo_sugar.png" alt="logo de Sugar Rush Store">
+      </a>  
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="views/nosotros.html"> <h4>Nosotros</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/snacks.html"> <h4>Snacks</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/bebidas.html"><h4>Bebidas </h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/promociones.html"><h4>Promociones</h4> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="views/contacto.html"> <h4>Contacto</h4> </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>   
+     <!------------end nav--------------->
      <!------------incia carrusel--------------->
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -74,56 +84,46 @@
   <div class="container-fluid">
     <div class="row mb-2">
 
+    <div class="marca col-md-6 col-lg-3">
+      <a href="views/snacks.html">
+<img class="w-100 d-block mb-2" alt="Cambiar imagen" onmouseout="this.src='img/links/linkDulce.jpg';" onmouseover="this.src='img/links/dulceCambio.jpg';" src="img/links/dulceCambio.jpg" /></a>
+</div>
 
     <div class="marca col-md-6 col-lg-3">
-      <img class="w-100 d-block mb-2" src="img/links/dulceCambio.jpg">
+      <a href="views/picantes.html">
+<img class="w-100 d-block mb-2" alt="Cambiar imagen" onmouseout="this.src='img/links/linkPicante.jpg';" onmouseover="this.src='img/links/picanteCambio.jpg';" src="img/links/picanteCambio.jpg" /></a>
+</div>
 
-      </div>
+    <div class="marca col-md-6 col-lg-3">
+      <a href="views/snacks.html">
+<img class="w-100 d-block mb-2" alt="Cambiar imagen" onmouseout="this.src='img/links/linkRefrescantes.jpg';" onmouseover="this.src='img/links/citricoCambio.jpg';" src="img/links/citricoCambio.jpg" /></a>
+</div>
 
-        <div class="marca col-md-6 col-lg-3">
-      <img class="w-100 d-block mb-2" src="img/links/picanteCambio.jpg">
-
-      </div>
-
-      <div class="marca col-md-6 col-lg-3">
-      <img class="w-100 d-block mb-2" src="img/links/citricoCambio.jpg">
-      </div>
-
-      <div class="marca col-md-6 col-lg-3">
-      <img class="w-100 d-block mb-2" src="img/links/promocionesCambio.jpg">
-      </div>
-      
-      </div>
+    <div class="marca col-md-6 col-lg-3">
+      <a href="views/snacks.html">
+<img class="w-100 d-block mb-2" alt="Cambiar imagen" onmouseout="this.src='img/links/linkPromos.jpg';" onmouseover="this.src='img/links/promocionesCambio.jpg';" src="img/links/promocionesCambio.jpg" /></a>
+</div>
    </div>
+  </div>
 </section>
 
 
-</div>
-
-
      <!------------termina links directos---->
-     <main>
-       <section class="py-3">
-         <div class="container-fluid">
-           <div class="row">
+<main id="nosotros">
+  <div class="d-flex flex-column justify-content-center w-100 h-100">
+  <div class="d-flex flex-column justify-content-center align-items-center">
 
-            <article class="col-md-6 col-lg-9">
-              <h2 class="text-sm-start text-md-center text-lg-center">Nuestra Historia</h2>
-              <p>En el año 2018 emprendimos un viaje en el que nos dispusimos a probar los mejores snacks de cada país, probamos cosas maravillosas y alguna que otra aventura exótica para el paladar, al compartir nuestra mejor selección con nuestros amigos, nos dimos cuenta de que podemos llevar estas experiencias a más personas, así nace nuestro sueño, que hoy disfrutamos contigo.</p>
-          </article>
-           <article class="col-md-6 col-lg-3">
-          <img src="img/us.jpg" alt="familia comprando en el supermercado" class="w-100 d-block mb-2">
-            </article>
-           </div>
-         </div>
+      <h6>NOSOTROS</h6>
+      <h5 class="text-center">En el año 2018 emprendimos un viaje en el que nos dispusimos a probar los mejores snacks de cada país, probamos cosas maravillosas y alguna que otra aventura exótica para el paladar, al compartir nuestra mejor selección con nuestros amigos, nos dimos cuenta de que podemos llevar estas experiencias a más personas, así nace nuestro sueño, que hoy disfrutamos contigo.</h5>
+    </div>
+   </div>
 
-       </section>
-     </main>
+</main>
 
-    <section class="py-3">
+<section class="py-3">
     <div class="container-fluid bg-blue">
     <div class="row">
-    <h2 class="text-start">Contáctanos</h2>
+    <h4 class="text-start">Contáctanos</h4>
     <article class="col-md-6 col-lg-9">
      <form>
   <div class="mb-3">
@@ -143,21 +143,22 @@
 </form>
 </article>
 
-<article class="col-sm-12 col-md-12 col-lg-3 ">
-<img src="img/contacto.jpg" class="w-100 img-rounded">
-</article>
+   <article class="col-sm-12 col-md-12 col-lg-3 ">
+   <img src="img/head.png" class="w-100 img-rounded">
+   </article>
 
-</div>
-</div>
+  </div>
+ </div>
 </section>
 
- <footer class="bg-pink py-3 text-center
-text-footer">
-<h5>Siguenos en nuestras redes sociales</h5> 
+<div class="footer">
+ <footer class="bg-pink py-3">
+<p class="p-white">Siguenos en nuestras redes sociales</p> 
 <img src="img/logo_insta.png"> 
-<img src="img/logo_facebook.png">
-</footer>
 
+<img src="img/logo_facebook.png">
+</div>
+</footer>
 
     <script src="js/bootstrap.min.js"></script>
   </body>

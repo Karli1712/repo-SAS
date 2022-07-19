@@ -1,0 +1,103 @@
+// extends
+.btn-more{
+	width: 100px;
+	height: 30px;
+	background-color: linear-gradient(to top, royalblue,#3BD4FA);
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	&:hover{
+		background-color: royalblue;
+		color: white;
+	}
+}
+.btn-light{
+   @extend .btn-more;
+   border-radius:  4px;
+}
+
+//mixins
+@mixin texto($font-size, $interlineado,$color){
+	font-family: $mainFont;
+	font-size: $font-size;
+	line-height: $interlineado;
+	color: $color;
+	padding:  4px;
+}
+
+@mixin d-flex($justify, $align, $dire){
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction:  $dire;
+}
+
+.container-fluid{
+	@include d-flex(center, flex-end,row )
+}
+
+
+//maps
+$paleta:(
+    'uno': #ed458d,
+    'dos':#FF7FB6,
+    'tres':#EA2570,
+    'cuatro':#F2FFFD,
+    'cinco': #9b9a9b,
+    'seis': #292829,
+    'siete':#0FE0F9,
+    'ocho':#0FF9D9,
+    'nueve':#051252,
+    'diez':#040B30,
+    'once': #758CFE,
+    'doce': #F5F0F0,
+    'trece':#3f393e,
+);
+
+.bg-pink{
+	background-color: map-get($map: $paleta,$key:'uno');
+}
+
+.bg-nav{
+	background-color: map-get($map: $paleta,$key:'cuatro') ;
+}
+
+
+// condicionales 
+@mixin alinear-texto($align){
+	@if $align == center{ text-align:center}
+	@if $align == left{ text-align:left}
+	@if $align == right{ text-align:right}
+}
+
+p{
+	@include alinear-texto(left);
+}
+
+
+// bucles
+    @for $i from 1 through 6{
+	.text-#{$i}{
+		font-size: .25em *$i;
+
+	}
+}
+
+// bucle evolucionado
+ @each $icono in facebook, insta{
+ 	.#{$icono}-icon{
+		background-image:url(../img/#{$icono}.png);
+		width: 30px;
+    	height: 30px;
+ 		background-size:100%;
+ 		list-style: none;
+ 		margin-right: 6px;
+	}
+}
+
+
+
+
+

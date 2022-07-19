@@ -1,11 +1,10 @@
-.botonera{
-	background-color:$white;
+.navbar{
 	padding: 5px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	img{
-		width: 150px;
+		width: 100px;
 		@media (min-width: 320px) and (max-width: 320px){
 			width: 100px;
 		}
@@ -21,10 +20,9 @@
 				text-decoration: none;
 				color:$secondaryColor;
 				&:hover{
-					color:$keyColor;
+				color:$keyColor;
 				}
 			}
 		}
 	}
 }
-

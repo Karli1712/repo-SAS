@@ -1,28 +1,38 @@
 
-	*{
-	margin: 0;
-	padding:0;
-}
-
 h1,
 h2,
 h3{
-	font-family: $secondaryFont;
+	font-family: $mainFont;
+	font-size: $textMd;
 	color:$keyColor;
 	margin: 10px 20px;
 	font-weight: $bold;
+
 }
 
-h1{
-	font-size: $textXl;
-}
 
-h2{
+h4 {
 	font-size: $textLg;
+	font-weight: $regular;
+    font-family: $secondaryFont;
+    color: $secondaryColor;
 }
 
-h3{
-	font-size: $textMd;
+h5{
+	font-size: $textLg;
+	font-weight: $light;
+    font-family: $mainFont;
+    color: $white;
+}
+
+h6{
+	color: $white;
+	font-size: $textXl;
+	font-weight: $bold;
+    font-family: $mainFont;
+    padding-right: 50px;
+    padding-left: 50px;
+
 }
 
 p{
@@ -30,8 +40,9 @@ p{
 	font-family: $mainFont;
 	line-height: 1.4em;
 	font-size: $textMd;
-	color:$black;
+	color:$keyColor;
 }
+
 
 a{
 	margin: 10px 20px;
