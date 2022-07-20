@@ -27,6 +27,43 @@
 .bg-nav {
   background-color: #F2FFFD; }
 
+p {
+  text-align: left; }
+
+.text-1 {
+  font-size: 0.25em; }
+
+.text-2 {
+  font-size: 0.5em; }
+
+.text-3 {
+  font-size: 0.75em; }
+
+.text-4 {
+  font-size: 1em; }
+
+.text-5 {
+  font-size: 1.25em; }
+
+.text-6 {
+  font-size: 1.5em; }
+
+.facebook-icon {
+  background-image: url(../img/facebook.png);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px; }
+
+.insta-icon {
+  background-image: url(../img/insta.png);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none;
+  margin-right: 6px; }
+
 .navbar {
   padding: 5px 20px;
   display: flex;
@@ -61,20 +98,20 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Pacifico", cursive;
   color: #ed458d; }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   color: #F5F0F0; }
 
 h6 {
   color: #F5F0F0;
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 2em;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   padding-right: 50px;
   padding-left: 50px; }
@@ -84,7 +121,7 @@ p {
   font-family: "Montserrat", sans-serif;
   line-height: 1.4em;
   font-size: 1em;
-  color: #F5F0F0; }
+  color: #051252; }
 
 a {
   margin: 10px 20px;
